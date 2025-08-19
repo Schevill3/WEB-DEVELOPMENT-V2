@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form Assignment</title>
+  <meta name="description" content="An enhanced HTML5 form with lists, tables, and media for assignment submission.">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    header, footer { background: #f0f0f0; padding: 15px; border-radius: 8px; }
+    form { background: #fafafa; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
+    table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+    table, th, td { border: 1px solid #ccc; }
+    th, td { padding: 10px; text-align: left; }
+    ul { margin: 10px 0; }
+    button { margin-top: 15px; padding: 10px 15px; background: #007acc; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #005b99; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Enhanced Form Example</h1>
+  <p>This page demonstrates HTML5 semantic structure, form elements, lists, tables, and media integration.</p>
+</header>
+
+<main>
+  <section>
+    <h2>Information List</h2>
+    <ul>
+      <li>Accessible HTML5 form</li>
+      <li>Semantic structure</li>
+      <li>Built-in validation</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Sample Data Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Duration</th>
+          <th>Mode</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Web Development</td>
+          <td>6 months</td>
+          <td>Online</td>
+        </tr>
+        <tr>
+          <td>Data Science</td>
+          <td>12 months</td>
+          <td>Hybrid</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Media Example</h2>
+    <img src="https://via.placeholder.com/400x200" alt="Sample placeholder image">
+    <video width="400" controls>
+      <source src="sample.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required autocomplete="name">
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6">
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="18" max="100" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+
+      <label for="interests">Interests:</label>
+      <input type="checkbox" id="coding" name="interests" value="coding">
+      <label for="coding">Coding</label>
+      <input type="checkbox" id="sports" name="interests" value="sports">
+      <label for="sports">Sports</label>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">-- Select Country --</option>
+        <option value="kenya">Kenya</option>
+        <option value="uganda">Uganda</option>
+        <option value="tanzania">Tanzania</option>
+      </select>
+
+      <label for="bio">Short Bio:</label>
+      <textarea id="bio" name="bio" placeholder="Tell us about yourself" rows="4" required></textarea>
+
+      <label for="profile">Upload Profile Picture:</label>
+      <input type="file" id="profile" name="profile" accept="image/*">
+
+      <label for="readonlyField">Read-only Field:</label>
+      <input type="text" id="readonlyField" value="This field is readonly" readonly>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Enhanced Form Example. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
