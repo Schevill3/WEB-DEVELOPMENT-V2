@@ -1,0 +1,59 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+/* Header and navigation */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Section styling */
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Box Model Demo */
+.box {
+  background-color: #e0f7fa;
+  border: 2px solid #00796b;
+  padding: 20px;   /* inside spacing */
+  margin: 20px 0;  /* outside spacing */
+  width: 300px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
