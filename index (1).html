@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Semantic, Accessible, SEO‑Friendly Starter</title>
+  <meta name="description" content="A single‑page HTML5 template with semantic structure, accessibility enhancements, and SEO best practices." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Open Graph / Twitter for rich previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Semantic, Accessible, SEO‑Friendly Starter" />
+  <meta property="og:description" content="A single‑page HTML5 template with semantic structure, accessibility enhancements, and SEO best practices." />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:image" content="https://picsum.photos/1200/630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Semantic, Accessible, SEO‑Friendly Starter" />
+  <meta name="twitter:description" content="A single‑page HTML5 template with semantic structure, accessibility enhancements, and SEO best practices." />
+  <meta name="twitter:image" content="https://picsum.photos/1200/630" />
+
+  <!-- Structured data: basic WebSite schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Semantic, Accessible, SEO‑Friendly Starter",
+    "url": "https://example.com/",
+    "description": "A single‑page HTML5 template with semantic structure, accessibility enhancements, and SEO best practices.",
+    "inLanguage": "en"
+  }
+  </script>
+
+  <style>
+    /* Minimal, accessible defaults */
+    :root { --maxw: 72rem; --gap: 1rem; }
+    * { box-sizing: border-box; }
+    html:focus-within { scroll-behavior: smooth; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; color: #111; }
+    a { text-decoration: none; }
+    a:hover, a:focus { text-decoration: underline; }
+    img { max-width: 100%; height: auto; }
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 1rem; }
+    header, nav, main, aside, footer { display: block; }
+
+    .skip-link { position: absolute; left: -999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+    .skip-link:focus { left: 1rem; top: 1rem; width: auto; height: auto; padding: .5rem .75rem; background: #000; color: #fff; border-radius: .5rem; z-index: 1000; }
+
+    header { border-bottom: 1px solid #e5e7eb; background: #fafafa; }
+    .brand { display: flex; align-items: center; gap: .75rem; }
+    .brand img { border-radius: .5rem; }
+    .topnav { display: flex; gap: 1rem; align-items: center; }
+    .topnav a { padding: .5rem .75rem; border-radius: .5rem; }
+    .topnav a[aria-current="page"] { background: #111; color: #fff; }
+
+    main { display: grid; gap: 2rem; grid-template-columns: 1fr; }
+    @media (min-width: 900px) { main { grid-template-columns: 2fr 1fr; } }
+
+    section { margin-block: 1rem; }
+    h1, h2, h3 { line-height: 1.25; }
+    h1 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); margin-top: 1rem; }
+    h2 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); margin-top: 1.5rem; }
+    h3 { font-size: clamp(1.1rem, 2vw, 1.25rem); margin-top: 1rem; }
+
+    .feature-list { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .card { border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1rem; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.04); }
+
+    form { display: grid; gap: .75rem; }
+    label { font-weight: 600; }
+    input, textarea, button { font: inherit; padding: .6rem .75rem; border: 1px solid #cbd5e1; border-radius: .5rem; }
+    input:focus, textarea:focus, button:focus { outline: 3px solid #111; outline-offset: 2px; }
+    button { cursor: pointer; }
+
+    footer { margin-top: 2rem; border-top: 1px solid #e5e7eb; background: #fafafa; }
+    .footer-inner { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+    @media (min-width: 700px) { .footer-inner { grid-template-columns: 1fr auto; align-items: center; } }
+
+    .visually-hidden { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); white-space: nowrap; }
+  </style>
+</head>
+<body>
+  <!-- Accessibility: allow keyboard users to skip repetitive nav -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+      <div class="brand">
+        <img src="https://picsum.photos/64" width="48" height="48" alt="Site logo placeholder" />
+        <strong>My Accessible Site</strong>
+      </div>
+      <nav aria-label="Primary" class="topnav">
+        <a href="#home" aria-current="page">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" tabindex="-1">
+    <article id="home" aria-labelledby="page-title">
+      <header>
+        <h1 id="page-title">A Semantic, Accessible, SEO‑Ready HTML Starter</h1>
+        <p>Clean structure using HTML5 elements, built‑in accessibility enhancements, and metadata that helps search engines understand your page.</p>
+      </header>
+
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About This Template</h2>
+        <p>This single file demonstrates semantic landmarks (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code>), a clear heading hierarchy, and accessibility features like labels, a skip link, and meaningful alt text.</p>
+        <figure>
+          <img src="https://picsum.photos/800/420" alt="Abstract placeholder image representing content illustration" width="800" height="420" />
+          <figcaption>A descriptive caption that provides additional context for the image.</figcaption>
+        </figure>
+      </section>
+
+      <section id="features" aria-labelledby="features-heading">
+        <h2 id="features-heading">Key Features</h2>
+        <div class="feature-list">
+          <div class="card">
+            <h3>Semantic Structure</h3>
+            <p>Uses appropriate HTML5 elements and landmark regions so assistive technologies can navigate the page effectively.</p>
+          </div>
+          <div class="card">
+            <h3>Accessible by Default</h3>
+            <p>Includes a skip link, form labels, clear focus states, descriptive alt text, and ARIA attributes only where helpful.</p>
+          </div>
+          <div class="card">
+            <h3>SEO‑Friendly</h3>
+            <p>Well‑structured headings, meta description, canonical URL, social previews, and JSON‑LD structured data.</p>
+          </div>
+          <div class="card">
+            <h3>Responsive</h3>
+            <p>Simple, adaptive layout that works across mobile and desktop without extra frameworks.</p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <aside aria-labelledby="newsletter-heading">
+      <h2 id="newsletter-heading">Stay in the Loop</h2>
+      <p>Subscribe to updates. We value accessibility and privacy — fields marked with * are required.</p>
+      <form aria-describedby="newsletter-help" action="#" method="post">
+        <p id="newsletter-help" class="visually-hidden">Enter your name and email to subscribe.</p>
+        <div>
+          <label for="name">Full name *</label>
+          <input id="name" name="name" type="text" required autocomplete="name" />
+        </div>
+        <div>
+          <label for="email">Email address *</label>
+          <input id="email" name="email" type="email" required inputmode="email" autocomplete="email" />
+        </div>
+        <div>
+          <label for="message">Message (optional)</label>
+          <textarea id="message" name="message" rows="4" aria-describedby="message-help"></textarea>
+          <small id="message-help">Tell us what you’re interested in.</small>
+        </div>
+        <button type="submit">Subscribe</button>
+      </form>
+    </aside>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> My Accessible Site. All rights reserved.</p>
+      <nav aria-label="Footer">
+        <a href="#privacy" aria-label="Privacy policy">Privacy</a>
+        <span aria-hidden="true"> · </span>
+        <a href="#terms" aria-label="Terms and conditions">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Small enhancement: current year for footer (no impact on SEO/accessibility)
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
