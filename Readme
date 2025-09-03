@@ -1,0 +1,64 @@
+# 🌐 Interactive Web Pages with JavaScript 🎉
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+
+## 📖 Overview
+This project demonstrates how to make a simple webpage **interactive** using **JavaScript**.  
+It covers:
+- 🎯 Event handling (clicks, form submission, etc.)
+- ⚡ Interactive elements (light/dark mode, counter game)
+- ✅ Form validation (custom JavaScript rules)
+
+---
+
+## ✨ Features
+
+### 🌗 Light/Dark Mode
+- Toggle between light and dark themes with one button.
+- Implemented using `classList.toggle()`.
+
+### 🎮 Counter Game
+- Increase the score by clicking the **Increase** button.
+- Reset the score with the **Reset** button.
+- Demonstrates dynamic DOM updates with `.textContent`.
+
+### 📋 Form Validation
+- Validates input fields before submission:
+  - Name: cannot be empty
+  - Email: must match a regex pattern
+  - Password: must be at least 6 characters
+- Provides real-time feedback with **error ❌** or **success ✅** messages.
+
+---
+
+## 📂 Files
+- **index.html** → Webpage structure  
+- **style.css** → Styling + dark mode  
+- **script.js** → Event handling, interactivity, and validation  
+- **README.md** → Documentation  
+
+---
+
+## 🚀 How to Run
+1. Download or clone this repository.  
+2. Open `index.html` in your browser.  
+3. Try:
+   - Toggling between light/dark mode  
+   - Playing with the counter  
+   - Submitting the form with different inputs  
+
+---
+
+## 🏆 Learning Outcomes
+By completing this project, I practiced:
+- Adding **event listeners** in JavaScript  
+- Creating **interactive features** with DOM manipulation  
+- Writing **custom validation logic**  
+- Organizing clean, well-commented code  
+
+---
+
+## 🎉 Demo Screenshot (Optional)
+> *(You can add a screenshot of your project here by uploading an image to GitHub and linking it!)*  
